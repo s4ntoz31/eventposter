@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  pedalpulse-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: pedalpulse-poster-app
+    restart: unless-stopped
